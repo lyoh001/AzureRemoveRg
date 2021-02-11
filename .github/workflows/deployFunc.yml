@@ -5,16 +5,16 @@ env:
   AZURE_FUNCTIONAPP_NAME: azureremovergfuncapp
   AZURE_FUNCTIONAPP_PACKAGE_PATH: "."
   PYTHON_VERSION: "3.8"
-  
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout GitHub Action
-      uses: actions/checkout@main
+      uses: actions/checkout@v2
 
     - name: Setup Python ${{ env.PYTHON_VERSION }} Environment
-      uses: actions/setup-python@v1
+      uses: actions/setup-python@v2
       with:
         python-version: ${{ env.PYTHON_VERSION }}
 
