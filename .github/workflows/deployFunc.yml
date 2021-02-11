@@ -1,5 +1,5 @@
-on: [push]
 name: Azure Function App
+on: [push]
 
 env:
   AZURE_FUNCTIONAPP_NAME: azureremovergfuncapp
@@ -10,8 +10,8 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-
-    - uses: actions/checkout@main
+    - name: Checkout GitHub Action
+      uses: actions/checkout@main
 
     - name: Setup Python ${{ env.PYTHON_VERSION }} Environment
       uses: actions/setup-python@v1
