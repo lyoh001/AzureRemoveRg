@@ -2,7 +2,7 @@ on: [push]
 name: Azure Function App
 
 env:
-  AZURE_FUNCTIONAPP_NAME: vickk73funcapp
+  AZURE_FUNCTIONAPP_NAME: azureremovergfuncapp
   AZURE_FUNCTIONAPP_PACKAGE_PATH: "."
   PYTHON_VERSION: "3.8"
   
