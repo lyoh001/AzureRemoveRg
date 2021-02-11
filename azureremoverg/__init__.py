@@ -20,7 +20,6 @@ def get_rest_api_token():
         return requests.post(
             url=oauth2_url, headers=oauth2_headers, data=oauth2_body
         ).json()["access_token"]
-
     except Exception as e:
         logging.info(f"{e}")
 
@@ -48,6 +47,5 @@ def main(mytimer: func.TimerRequest) -> None:
                 ).json()["value"]
             ]
         )
-
     except Exception as e:
         logging.info(f"{e}")
