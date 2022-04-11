@@ -1,4 +1,4 @@
-# VICGOV1UAT - GSPSandpit01 Resource Cleaner
+# VICGOV - Azure Resource Cleaner
 ## 1. Introduction
 ### 1.1	Overview
 
