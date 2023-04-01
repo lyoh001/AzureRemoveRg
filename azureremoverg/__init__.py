@@ -54,7 +54,8 @@ def main(mytimer: func.TimerRequest) -> None:
                 for rg in requests.get(
                     url=f"https://management.azure.com/subscriptions/{os.environ['SUBSCRIPTION_ID']}/resourcegroups?api-version=2020-06-01",
                     headers=rest_api_headers,
-                ).json()["value"] if not rg["name"].endswith("rg")
+                ).json()["value"]
+                # ).json()["value"] if not rg["name"].endswith("rg")
             ]
         )
     except requests.exceptions.RequestException as e:
